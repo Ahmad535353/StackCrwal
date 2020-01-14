@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./Stack Overflow IR_files/w3.css">
+
+    <title>Stack Overflow IR</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="http://localhost:5000/static/images/icons/favicon.ico">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/util.css">
+    <link rel="stylesheet" type="text/css" href="./Stack Overflow IR_files/main.css">
+    <!--===============================================================================================-->
+</head>
+<body bgcolor="#c4d3f6">
+<div align="center" style="background-color:#c4d3f6">
+    <form method="post">
+        <label class="w3-text-indigo" for="number"><b>Number of Results (max is 20)</b></label>
+        <input class="w3-input w3-border w3-pale-blue" type="text" name="number" id="number" placeholder="10">
+
+        <label class="w3-text-indigo" for="days"><b>For how many days ago?</b></label>
+        <input class="w3-input w3-border w3-pale-blue" type="text" name="days" id="days" placeholder="7">
+
+        <p>
+            <button class="w3-btn w3-indigo" type="submit" value="Calculate">Search</button>
+        </p>
+    </form>
+</div>
+
+
+<div align="center" style="background-color:#c4d3f6">
+    
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <h1 style="text-align:center;font-family: Poppins-Regular;">Latest</h1>
+                <div class="table">
+                    <div class="row header">
+                        <div class="cell">
+                            Num.
+                        </div>
+                        <div class="cell">
+                            Question
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            1
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59728106/anr-input-dispatching-timed-out-at-firebasemessaging-subscribetotopic">ANR Input Dispatching timed out at FirebaseMessaging.subscribeToTopic</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            2
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727991/binding-jar-lib-for-xamarin">Binding .Jar lib for Xamarin</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            3
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727961/how-to-include-openssl-library-in-android">How to include OpenSSL library in Android?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            4
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727903/how-to-get-timestamp-in-long-in-android">How to get timestamp in long in android?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            5
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727756/grid-layout-and-cardview-not-showing-up-on-old-andriod-device">Grid Layout and CardView Not Showing up on old andriod Device</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            6
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727741/how-to-update-number-of-items-count-in-cart">How to update number of items count in cart?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            7
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727711/how-can-i-create-a-turn-based-app-with-firebase-in-android-without-having-a-logi">how can I create a turn based app with firebase in android without having a login functionality?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            8
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727706/android-custom-class-for-setting-the-max-height-of-a-nestedscrollview-does-not">Android: Custom class for setting the max height of a NestedScrollView does not work (there is no scrollbar)</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            9
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727644/how-to-give-material-button-shapeappearance-seperate-to-edittext-shape-appearanc">How to give Material Button ShapeAppearance seperate to Edittext Shape Appearance?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            10
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727562/how-to-access-phone-permissions-specifically-the-volume-with-arduino-raspberyp">How to access phone permissions (specifically the volume) with Arduino/RaspberyPi and control it wirelessly?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            11
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727501/preference-backup-restore-not-working-after-pie">Preference Backup restore not working after Pie</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            12
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727486/countdowntimer-in-service">CountdownTimer in service</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            13
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727452/retrofit-image-is-uploaded-but-empty-server-response-is-returned">Retrofit image is uploaded but empty server response is returned</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            14
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727435/unable-to-fix-the-gradle-sync-issue">Unable to fix the gradle sync issue</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            15
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727401/how-bitmap-array-video-streaming">How Bitmap array ==&gt; Video Streaming</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            16
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727399/refresh-specific-dependencies-android">Refresh specific dependencies android</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            17
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727346/how-to-execute-a-list-of-actions-if-each-action-need-to-be-run-on-a-new-thread-a">How to execute a list of actions if each action need to be run on a new thread and wait the previous action is finalized (in Android)</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            18
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727344/reflective-class-call-succeeds-on-newinstance-fails-on-getmethod">Reflective class call succeeds on newInstance(), fails on getMethod()</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            19
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727250/how-to-customize-calender-to-show-only-one-row-and-center-selected">How to customize calender to show only one row and center selected?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            20
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59727209/how-to-remove-all-markers-and-polyline-from-google-map-in-android">how to remove all markers and polyline from google map in android?</a>
+
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="limiter">
+        <div class="container-table100">
+            <div class="wrap-table100">
+                <h1 style="text-align:center;font-family: Poppins-Regular;">Top Votes</h1>
+                <div class="table">
+
+                    <div class="row header">
+                        <div class="cell">
+                            Num.
+                        </div>
+                        <div class="cell">
+                            Question
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            1
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59487982/android-how-to-disable-state-half-expanded-state-of-a-bottom-sheet">Android - How to disable STATE_HALF_EXPANDED state of a bottom sheet</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            2
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59524839/is-it-possible-to-pause-any-video-mediaplayer-app-in-android-when-pull-down-th">Is it possible to pause any video (mediaplayer) APP in Android when pull down the notification panel?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            3
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59489702/referenced-method-count-increased-after-app-modularization">Referenced Method Count Increased After App Modularization</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            4
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59522786/how-can-we-get-an-activity-shown-using-setlaunchdisplayid-to-be-landscape">How Can We Get an Activity Shown Using setLaunchDisplayId() to be Landscape?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            5
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59510292/android-app-bundle-from-react-native-you-uploaded-an-apk-or-android-app-bundle">Android App Bundle from React Native: You uploaded an APK or Android App Bundle with invalid or missing signing information for some of its files</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            6
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59496368/execution-failed-for-task-flutter-twitterverifyreleaseresources">Execution failed for task ':flutter_twitter:verifyReleaseResources'</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            7
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59532667/particular-titlefetched-from-api-using-searchview">particular title(fetched from api) using searchview?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            8
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59679479/do-companion-objects-remain-in-memory-for-apps-lifecycle">Do companion objects remain in memory for app's lifecycle</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            9
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59606443/using-vega-charts-in-an-ionic-app-causes-runtime-errors-in-launching-on-some-dev">Using Vega Charts in an Ionic App causes runtime errors in launching on some devices</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            10
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59503722/how-to-detect-that-a-notification-bundle-group-was-clicked-in-android">How to detect that a notification bundle/group was clicked in Android?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            11
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59575956/how-to-get-event-for-different-baudrate">How to get event for different baudrate?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            12
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59547587/virtual-synthesizer-in-android-based-on-jar-native-jni">Virtual synthesizer in Android (based on jar) - native jni?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            13
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59484372/layerdrawable-images-not-rendering-completely-when-converting-to-pdf-in-android">LayerDrawable images not rendering completely when converting to pdf in android studio</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            14
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59508799/flutter-google-maps-trying-to-create-an-already-created-platform-view-view-id">Flutter Google Maps, Trying to create an already created platform view, view id: 0</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            15
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59658954/how-to-make-circular-mask-and-clip-glsurfaceview">How to make Circular Mask and Clip GLSurfaceView?</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            16
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59573755/progress-bar-not-update-in-notification">Progress bar not update in notification</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            17
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59523383/alertdialog-show-soft-keyboard-with-a-custom-class-not-working">AlertDialog - Show soft keyboard with a custom class not working</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            18
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59486665/android-studio-emulator-warning-system-cpp">Android studio emulator: WARNING System.cpp</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            19
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59661083/is-it-possible-to-lock-command-protect-cloning-or-not-erasable-by-other-app-for">Is it possible to lock command, protect cloning or not erasable by other app for MIFARE card 1k</a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="cell" data-title="Num.">
+                            20
+                        </div>
+                        <div class="cell" data-title="Question">
+                            <a href="https://stackoverflow.com/questions/59490729/wap-push-deliver-intent-never-sent-by-android-system">WAP_PUSH_DELIVER Intent never sent by Android system</a>
+
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--===============================================================================================-->
+    <script src="./Stack Overflow IR_files/jquery-3.2.1.min.js.download"></script>
+    <!--===============================================================================================-->
+    <script src="./Stack Overflow IR_files/popper.js.download"></script>
+    <script src="./Stack Overflow IR_files/bootstrap.min.js.download"></script>
+    <!--===============================================================================================-->
+    <script src="./Stack Overflow IR_files/select2.min.js.download"></script>
+    <!--===============================================================================================-->
+    <script src="./Stack Overflow IR_files/main.js.download"></script>
+    
+</div>
+
+</body></html>

@@ -8,3 +8,4 @@ The results will be the title of the questions and by clicking on any one of the
 I wanted to stay loyal to the task and don't go so much further, but due to the modularity of the code, it is very easy to add other features like tag-choosing and different sorting order and topics (for example make it ascending or search in a specific period in the past or most-commented questions, etc.)
 
 You can build the website locally by running the Web.py using Python 3.5 (tested on windows 10 and chrome browser).
+You need to install Flask framework and the StackAPI as well.

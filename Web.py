@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    questions_by_time, questions_by_votes = fetch_results()
+    questions_by_time, questions_by_votes = fetch_results(number, days)
     return render_template('index.html', questions_by_time=questions_by_time, questions_by_vote=questions_by_votes)
 
 

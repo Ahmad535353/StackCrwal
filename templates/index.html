@@ -4,7 +4,7 @@
 	<title>Table V02</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
+<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="static/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
@@ -22,10 +22,42 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
 	<div class="limiter">
 		<div class="container-table100">
 			<div class="wrap-table100">
+				<h1 style="text-align:center;font-family: Poppins-Regular;">Latest</h1>
+				<div class="table">
+						<div class="row header">
+							<div class="cell">
+								Num.
+							</div>
+							<div class="cell">
+								Question
+							</div>
+						</div>
+
+						{%for i in range(0, 10)%}
+						<div class="row">
+							<div class="cell" data-title="Num.">
+								{{i+1}}
+							</div>
+							<div class="cell" data-title="Question">
+								<a href="{{ questions_by_time[i]['link'] }}">{{ questions_by_time[i]['title']|safe }}</a>
+
+
+							</div>
+						</div>
+						{%endfor%}
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+				<h1 style="text-align:center;font-family: Poppins-Regular;">Top Votes</h1>
 					<div class="table">
 
 						<div class="row header">
@@ -43,39 +75,7 @@
 								{{i+1}}
 							</div>
 							<div class="cell" data-title="Question">
-								<a href="{{ questions_by_time[i]['link'] }}">{{ questions_by_time[i]['title'] }}</a>
-
-
-							</div>
-						</div>
-						{%endfor%}
-
-					</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="limiter">
-		<div class="container-table100">
-			<div class="wrap-table100">
-					<div class="table">
-
-						<div class="row header">
-							<div class="cell">
-								Num.
-							</div>
-							<div class="cell">
-								Question
-							</div>
-						</div>
-
-						{%for i in range(0, 10)%}
-						<div class="row">
-							<div class="cell" data-title="Num.">
-								{{i+1}}
-							</div>
-							<div class="cell" data-title="Question">
-								<a href="{{ questions_by_time[i]['link'] }}">{{ questions_by_vote[i]['title'] }}</a>
+								<a href="{{ questions_by_time[i]['link'] }}">{{ questions_by_vote[i]['title']|safe }}</a>
 
 
 							</div>
@@ -88,9 +88,9 @@
 	</div>
 
 
-	
 
-<!--===============================================================================================-->	
+
+<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
